@@ -10,7 +10,7 @@ NetQuocca was found to be vulnerable to a sophisticated exploit chain involving 
 
 ### Exploitation
 
-The vulnerability stems from the inconsistent and insecure handling of user-supplied transaction descriptions across the `lab.example.invalid` (Desktop) and `lab.example.invalid` (Mobile) domains.
+The vulnerability stems from the inconsistent and insecure handling of user-supplied transaction descriptions across the `desktop.example.invalid` (Desktop) and `mobile.example.invalid` (Mobile) domains.
 
 #### 1. Technical Analysis of Vulnerable Components
 

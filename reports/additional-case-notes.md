@@ -50,10 +50,12 @@ The XSS Playground 4 writeup identifies a query parameter passed to a client-sid
 
 The saved result concerns acceptance of a script URL in that historical browser and policy context. A reconstruction should permit intended navigation destinations and schemes explicitly, and record the browser/CSP conditions. The notes do not establish that every modern browser executes the same URL.
 
-## ClosedLearning: preserved boundary and uncertainty
+## ClosedLearning: stored post content and tutor review
 
-The local ClosedLearning notes describe investigating a learning portal's upload and review behavior. They are retained locally as a separate source rather than silently merged into the Profile case. No new success claim is inferred here; it needs its own evidence-led reconstruction before publication as a completed case.
+The saved writeup describes a blogging interface accepting post content, an alert probe, and a report-to-tutor workflow. The recorded collector request includes the reported post URL and a JavaScript-readable lab cookie. Its User-Agent identifies a historical headless-browser context, although that string alone is not proof of the underlying automation implementation.
+
+This is a separate stored-XSS case: it does not use the Profile upload mechanism. Post rendering and review rendering must both treat submitted content as untrusted. Cookie disclosure is demonstrated by the saved narrative; full session takeover or arbitrary administrator control is not established.
 
 ## Source coverage
 
-This edition covers the local Handlebars, Orders, Secret 1/2, Teller 1, Blind XSS, Clients 2, Profile 1/2, and XSS Playground 4 writeups. Closely related variants and assessment-wide compilations remain local for provenance. See the [report index](../REPORTS.md) and [review notes](../docs/report-review-notes.md).
+This edition covers the local Handlebars, Orders, Secret 1/2, Teller 1, Blind XSS, Clients 2, Profile 1/2, XSS Playground 4, and ClosedLearning writeups. Closely related variants and assessment-wide compilations remain local for provenance. See the [report index](../REPORTS.md) and [review notes](../docs/report-review-notes.md).
